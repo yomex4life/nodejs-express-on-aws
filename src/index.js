@@ -4,8 +4,9 @@ const app = express();
 app.disable("x-powered-by");
 
 const port = 3000;
-app.get('/', (req, res) =>{
-    res.send('<hi>Express demo app</hi><h4>Messafe: Success</h4><p>Version 1.0</p>');
+app.get('/pt', (req, res) =>{
+    //res.send('<hi>Express demo app</hi><h4>Messafe: Success</h4><p>Version 1.0</p>');
+    res.status(200).json({"message": "Confirm"});
 })
 
 app.get('/products', (req, res) =>{
@@ -24,3 +25,5 @@ app.get('/products', (req, res) =>{
 app.listen(port, () =>{
     console.log("Demo app launched")
 })
+
+module.exports = app

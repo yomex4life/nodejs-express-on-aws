@@ -2,5 +2,5 @@ projectKey=express-aws
 serverUrl=http://localhost:9000
 serverVersion=8.6.0.39681
 dashboardUrl=http://localhost:9000/dashboard?id=express-aws
-ceTaskId=AXkOFzQMU8c6rBeA99Kl
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXkOFzQMU8c6rBeA99Kl
+ceTaskId=AXkOfDuvU8c6rBeA99Ko
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXkOfDuvU8c6rBeA99Ko
