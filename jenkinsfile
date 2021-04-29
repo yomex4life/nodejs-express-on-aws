@@ -23,7 +23,7 @@ pipeline {
     }
     stage('generate report'){
       steps{
-        sh cat ${BUILD_ID}.rpt
+        
         archiveArtifacts "${env.BUILD_ID}.rpt"
       }
     }
