@@ -22,8 +22,10 @@ pipeline {
       }
     }
     stage('generate report'){
-      sh cat ${BUILD_ID}.rpt
-      archiveArtifacts "${env.BUILD_ID}.rpt"
+      steps{
+        sh cat ${BUILD_ID}.rpt
+        archiveArtifacts "${env.BUILD_ID}.rpt"
+      }
     }
   }
 }
