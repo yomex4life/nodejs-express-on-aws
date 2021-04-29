@@ -18,6 +18,10 @@ app.get('/products', (req, res) =>{
         {
             productId: '102',
             price: 1000,
+        },
+        {
+            productId: '103',
+            price: 6700,
         }
     ])
 })
