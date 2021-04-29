@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "sonar": "node src/sonarqube.js",
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
