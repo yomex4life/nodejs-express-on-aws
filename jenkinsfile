@@ -14,6 +14,12 @@ pipeline {
         sh 'git log --reverse -1'
         sh 'npm install'
       }
+    },
+    stage('test') {
+      steps {
+        sh 'git log --reverse -1'
+        sh 'npm test'
+      }
     }
   }
 }
