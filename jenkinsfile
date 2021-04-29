@@ -23,8 +23,8 @@ pipeline {
     }
     stage('generate report'){
       steps{
-        
-        archiveArtifacts "${env.BUILD_ID}.rpt"
+        sh 'echo "We are generating artifacts for ${BUILD_ID}" > output.txt'
+        archiveArtifacts artifacts:"output.txt", onlyIfSuccessful: true
       }
     }
   }
